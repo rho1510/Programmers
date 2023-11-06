@@ -1,8 +1,8 @@
 import java.util.*;
 
 class Solution {
-    public List<Integer> solution(String[] name, int[] yearning, String[][] photo) {
-        List<Integer> answer = new ArrayList<>();
+    public int[] solution(String[] name, int[] yearning, String[][] photo) {
+        int[] answer = new int[photo.length];
         int sum=0;
         
         HashMap<String,Integer> map = new HashMap<>();
@@ -18,7 +18,7 @@ class Solution {
                     sum+=map.get(photo[i][j]);        
                 }
             }
-            answer.add(sum);
+            answer[i]=sum;
         }
         
         return answer;
