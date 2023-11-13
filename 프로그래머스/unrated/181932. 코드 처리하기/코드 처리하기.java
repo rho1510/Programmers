@@ -12,16 +12,19 @@ class Solution {
                if(arr[i]!='1'){
                    if(i%2==0){
                        answer+=arr[i];
+                       continue;
                    }
                }
                else{
                    mode=1;
+                   continue;
                }
            }
             else{
                 if(arr[i]!='1'){
                     if(i%2==1){
                         answer+=arr[i];
+                        continue;
                     }
                 }
                 else{
